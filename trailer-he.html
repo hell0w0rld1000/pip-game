@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- One trailer's own page (shared links open here and the trailer starts at once). tools/deploy_pages.sh
+     makes trailer-<lang>.html from this template for every published trailer. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1b1440" />
+  <title>פיפ והגלויות · הטריילר</title>
+  <meta name="title-en" content="Pip &amp; the Postcards · Trailer" />
+  <meta name="title-he" content="פיפ והגלויות · הטריילר" />
+  <meta name="description" content="הרפתקת תלת־ממד מסביב לעולם. צפו בטריילר — המשחק בקרוב!" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="פיפ והגלויות · הטריילר" />
+  <meta property="og:description" content="הרפתקת תלת־ממד מסביב לעולם. צפו בטריילר — המשחק בקרוב!" />
+  <meta property="og:image" content="https://hell0w0rld1000.github.io/pip-game/media/poster-he.jpg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta property="og:video" content="https://hell0w0rld1000.github.io/pip-game/media/trailer-he.mp4" />
+  <meta property="og:video:type" content="video/mp4" />
+  <meta property="og:video:width" content="1920" />
+  <meta property="og:video:height" content="1080" />
+  <meta property="og:url" content="https://hell0w0rld1000.github.io/pip-game/trailer-he.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fredoka:wght@500;600;700&family=Varela+Round&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body class="watch">
+  <header class="top" style="width:100%">
+    <a class="brand" href="./"><span class="st">✉</span><span data-en="Pip &amp; the Postcards" data-he="פיפ והגלויות">Pip &amp; the Postcards</span></a>
+    <button class="lang" type="button" data-en="עברית" data-he="English">עברית</button>
+  </header>
+  <main>
+    <div class="player">
+      <video src="media/trailer-he.mp4" poster="media/poster-he.jpg" controls playsinline preload="auto"></video>
+      <button class="unmute" type="button" data-en="🔊 Tap for sound" data-he="🔊 הקישו לצליל">🔊 Tap for sound</button>
+    </div>
+    <div class="bar">
+      <div class="title" data-en="The Hebrew Trailer<small>A cozy 3D adventure around the world</small>" data-he="הטריילר בעברית<small>הרפתקת תלת־ממד מסביב לעולם</small>"></div>
+      <div class="actions"></div>
+      <div class="play soon"><span class="clock">🕒</span><span data-en="Coming soon" data-he="בקרוב">Coming soon</span></div>
+    </div>
+  </main>
+  <footer><a href="./" data-en="← Back to the homepage" data-he="→ חזרה לדף הבית">← Back to the homepage</a></footer>
+  <script type="module">
+    import { watch } from './site.js';
+    watch('he');
+  </script>
+</body>
+</html>
